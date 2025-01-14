@@ -1,0 +1,61 @@
+/* Styles pour le composant */
+.title-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+    color: #333;
+  }
+  
+  .title-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .title-section .glow {
+    color: #66ccff;
+    animation: glow 1.5s infinite;
+  }
+  
+  .title-section p {
+    font-size: 1.2rem;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  /* Animation pour le texte "glow" */
+  @keyframes glow {
+    0%, 100% {
+      color: #673de6;
+      text-shadow: 0 0 10px #673de6;
+    }
+    50% {
+      color: #fff;
+      text-shadow: 0 0 20px #66ccff;
+    }
+  }
+  
+  /* Media Queries pour le rendu responsive */
+  @media (max-width: 768px) {
+    .title-section h1 {
+      font-size: 2rem;
+    }
+  
+    .title-section p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title-section h1 {
+      font-size: 1.5rem;
+    }
+  
+    .title-section p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,53 @@
+.circle-container {
+    display: flex; /* Disposition horizontale */
+    justify-content: space-around; /* Espacement entre les cercles */
+    align-items: center; /* Centrer verticalement */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permet aux cercles de passer à la ligne */
+    gap: 60px;
+
+
+  }
+  
+  .bulle{
+    overflow: hidden;
+    width: 150px;
+    height: 150px; 
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    border-radius: 56% 44% 45% 55%/58% 53% 47% 42%;
+
+    z-index: 0;
+    cursor: pointer;
+  }
+
+  .imagee img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    
+  }
+
+  .tiiitre{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+  }
+
+
+  .bulle-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .bulle-link:hover .bulle {
+    transform: scale(1.05); /* Effet de zoom au survol */
+    transition: transform 0.2s ease-in-out;
+  }
+  
