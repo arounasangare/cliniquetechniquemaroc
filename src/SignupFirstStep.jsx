@@ -63,7 +63,6 @@ function SignupFirstStep() {
 
   return (
     <>
-      {/* Navbar */}
       <Navbar expand="lg" className="navbar ">
         <Container>
           <Navbar.Brand href="#home" className="navlogo">
