@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import dixe from './assets/macon.jpg';
 import diixe from './assets/charpantier.jpg'
 import diiixe from './assets/jardinier.jpg'
@@ -19,15 +21,12 @@ import pl from './assets/plumbo.png'
 import'./CircleComponent .css'
 
 const  CirecleTravaux = () => {
-  // Liste des cercles avec leurs titres et images
   const circles = [
-    // { id: 5, title: "Triporteur", imageUrl: dixxxxe },
-    // { id: 5, title: "plombier", imageUrl: dixxxxxe },
-    //  { id: 3, title: "Jardinier", imageUrl: diiixe },
-     { id: 1, title: "Maçon", imageUrl: maç },
-     { id: 4, title: "Électricien", imageUrl: el },
-     { id: 5, title: " Peintre", imageUrl: pi },
-     { id: 2, title: "Carreleur", imageUrl: cl }, 
+
+     { id: 1, title: "Maçon", imageUrl: maç,  link: "/info-supplementaire" },
+     { id: 4, title: "Électricien", imageUrl: el, link: "/info-supplementaire" },
+     { id: 5, title: " Peintre", imageUrl: pi, link: "/info-supplementaire" },
+     { id: 2, title: "Carreleur", imageUrl: cl, link: "/info-supplementaire" }, 
     //  { id: 5, title: "Ingénieur Structure", imageUrl: dee },
     //  { id: 5, title: "Ingénieur Génie Electrique", imageUrl: deee },
     //  { id: 5, title: "Ingénieur Géotechnique ", imageUrl: deeee },
@@ -41,25 +40,19 @@ const  CirecleTravaux = () => {
   ];
 
   return (
-    <div className="circle-container">
-       
-
-
-        {circles.map(function(element, index){
-            return(
-                <div className="gfhfg">
-                    <div className="bulle">
-                    <div className="imagee">
-                <img src={element.imageUrl} alt="" />
-
-                </div>
-                 </div>
-                     <p className="tiiitre">{element.title}</p>
-                 </div>
-            )
-        })}
-
-
+<div className="circle-container">
+      {circles.map((circle, index) => (
+        <div key={index} className="gfhfg">
+          <Link to={circle.link} className="bulle-link">
+            <div className="bulle">
+              <div className="imagee">
+                <img src={circle.imageUrl} alt={circle.title} />
+              </div>
+            </div>
+            <p className="tiiitre">{circle.title}</p>
+          </Link>
+        </div>
+      ))}
     </div>
   );
 };

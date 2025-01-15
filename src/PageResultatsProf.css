@@ -1,0 +1,42 @@
+.title{
+  color: #002964;  
+  font-size: 30px;
+  font-weight: 800;
+}
+.nom-prof{
+  font-weight: bold; 
+}
+.sous-title{
+  color: var(--grayscale900);  
+}
+.text{
+  margin-bottom:5px;
+}
+.star{
+  width:30%;
+  margin-right:5px;
+}
+.evaluation{
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .container-title {
+   justify-content: center;
+   width: 100%;
+   text-align: center;
+  }
+  .title{
+    font-weight: 800;
+    font-size: 20px;
+
+  }
+  .sous-title{
+    color: var(--grayscale900);
+    font-size: 15px;
+  
+
+  }
+  
+}

@@ -1,0 +1,38 @@
+.nom{
+  font-weight: bolder;
+  font-size:30px;
+}
+.profess{
+  font-size:20px;
+}
+.description{
+  font-size:20px;
+  color:gray
+}
+.image{
+  width: 25%;
+}
+
+
+.test{
+  font-weight: bolder;
+}
+@media (max-width: 767px) {
+  .aaaaa{
+    flex-direction: column;
+  }
+  .image{
+    width: 70%;
+    margin-bottom:20px;
+  }
+  .nom,.profess{
+    margin-bottom:2px;
+  }
+  .cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

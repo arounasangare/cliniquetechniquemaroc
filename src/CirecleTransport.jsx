@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import dixe from './assets/macon.jpg';
 import diixe from './assets/charpantier.jpg'
 import diiixe from './assets/jardinier.jpg'
@@ -23,10 +25,10 @@ const CirecleTransport = () => {
     // { id: 3, title: "Jardinier", imageUrl: diiixe },
     // { id: 1, title: "Maçon", imageUrl: dixe },
     // { id: 4, title: "Électricien", imageUrl: diiiii },
-     { id: 5, title: " Triporteur", imageUrl: diiixxe },
-     { id: 2, title: "Camionette", imageUrl: cam }, 
-     { id: 5, title: "Taxi", imageUrl: tar },
-     { id: 5, title: "Livraison", imageUrl: liv },
+     { id: 5, title: " Triporteur", imageUrl: diiixxe, link: "/info-supplementaire" },
+     { id: 2, title: "Camionette", imageUrl: cam, link: "/info-supplementaire" }, 
+     { id: 5, title: "Taxi", imageUrl: tar, link: "/info-supplementaire" },
+     { id: 5, title: "Livraison", imageUrl: liv, link: "/info-supplementaire" },
     //  { id: 5, title: "Ingénieur Géotechnique ", imageUrl: deeee },
     // { id: 5, title: "plombier", imageUrl: dixxxxxe },
     // { id: 5, title: "Rénovation", imageUrl: dixxxxe },
@@ -39,25 +41,19 @@ const CirecleTransport = () => {
 
   return (
     <div className="circle-container">
-       
-
-
-        {circles.map(function(element, index){
-            return(
-                <div className="gfhfg">
-                    <div className="bulle">
-                    <div className="imagee">
-                <img src={element.imageUrl} alt="" />
-
-                </div>
-                 </div>
-                     <p className="tiiitre">{element.title}</p>
-                 </div>
-            )
-        })}
-
-
-    </div>
+    {circles.map((circle, index) => (
+      <div key={index} className="gfhfg">
+        <Link to={circle.link} className="bulle-link">
+          <div className="bulle">
+            <div className="imagee">
+              <img src={circle.imageUrl} alt={circle.title} />
+            </div>
+          </div>
+          <p className="tiiitre">{circle.title}</p>
+        </Link>
+      </div>
+    ))}
+  </div>
   );
 };
 
