@@ -767,7 +767,7 @@ width: 100%
   margin-bottom: 24px;
 }
 .giojiojioj{
-  background-color: var(--grayscale900);
+  background-color: #002964;
   color: white;
   padding: 9px 16px;
   border-radius: 8px;
@@ -785,6 +785,7 @@ width: 100%
 .ngfgureg{
   display: flex;
   justify-content: flex-end;
+  
 }
 .gregretghrt{
   color: white;
@@ -2449,13 +2450,50 @@ h5{
   }
 }
 .nfreuohregdd{
-  justify-content: start;
+  justify-content: start
+  
 
 }
 .ngriugyoeruogyriu{
   padding: 15px 30px;
   font-size: 18px;
+  margin-top: 10px;
 }
 .nurefhger{
   font-size: 25px;
+}
+
+.ss {
+  font-size: 24px;
+  
+} 
+
+.sss{
+  font-size: 38px;
+  
+}
+
+.nnn{
+  margin-top: 10px;
+  text-align: left;
+  color: #002964;
+  font-size: 21px;
+}
+
+.custom{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listi{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #003366; /* Couleur du texte */
+}
+
+.list-icon {
+  color: #003366; /* Couleur de l'icône */
+  margin-right: 10px; /* Espace entre l'icône et le texte */
 }

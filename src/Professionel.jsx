@@ -27,40 +27,13 @@ import CircleComponent2 from './CircleComponent2';
 import HowItWorks from './HowItWorks';
 import Testimonials from './Testimonials';
 import WhyChooseUs from './WhyChooseUs';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 
 
-function SignupFirstStep() {
-  const targetDate = new Date("2025-06-01T00:00:00").getTime();
-  const [timeLeft, setTimeLeft] = useState(targetDate - Date.now());
-  const base_url = import.meta.env.VITE_API_URL;
-
-  useEffect(() => {
-    // Envoi de la requête à l'API Laravel
-    axios.get(`${base_url}/api/jobs`)
-      .then((response) => {
-        console.log('ok'); // Affiche la réponse de l'API
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-  }, []);
-
-  // Update timeLeft every second
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimeLeft(targetDate - Date.now());
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [targetDate]);
-
-  // Convert milliseconds into days, hours, minutes, seconds
-  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
+function Professionel() {
+  
   return (
     <>
       {/* Navbar */}
@@ -94,8 +67,8 @@ function SignupFirstStep() {
                 </Nav.Link> */}
                <Nav.Link>
                 <div className="button ngfgureg mt-0">
-                  <Link to="/professionnel">
-                    <button className="giojiojioj vrvrvrvr">S'inscrire en tant que professionnel</button>
+                  <Link to="/home">
+                    <button className="giojiojioj vrvrvrvr">Je suis client</button>
                   </Link>
                 </div>
               </Nav.Link>
@@ -119,44 +92,8 @@ function SignupFirstStep() {
       <div className="loginbutton jgreiohgerg d-flex">
 
 
-        <div className="container-fluid">
-        <div class="marquee">
-  {/* <div class="track">
-    <div class="contenthutgiyhrk">
-      &nbsp;Accueil Téléphonique de 8h à 19h&nbsp;|&nbsp;+33 (0)4 65 84 65 38&nbsp;|&nbsp;Email: contact@lacliniquetechnique.fr
-    </div>
-    <div class="contenthutgiyhrk">
-      &nbsp;Accueil Téléphonique de 8h à 19h&nbsp;|&nbsp;+33 (0)4 65 84 65 38&nbsp;|&nbsp;Email: contact@lacliniquetechnique.fr
-    </div>
-    <div class="contenthutgiyhrk">
-      &nbsp;Accueil Téléphonique de 8h à 19h&nbsp;|&nbsp;+33 (0)4 65 84 65 38&nbsp;|&nbsp;Email: contact@lacliniquetechnique.fr
-    </div>
-    <div class="contenthutgiyhrk">
-      &nbsp;Accueil Téléphonique de 8h à 19h&nbsp;|&nbsp;+33 (0)4 65 84 65 38&nbsp;|&nbsp;Email: contact@lacliniquetechnique.fr
-    </div>
-    <div class="contenthutgiyhrk">
-      &nbsp;Accueil Téléphonique de 8h à 19h&nbsp;|&nbsp;+33 (0)4 65 84 65 38&nbsp;|&nbsp;Email: contact@lacliniquetechnique.fr
-    </div>
-    <div class="contenthutgiyhrk">
-      &nbsp;Accueil Téléphonique de 8h à 19h&nbsp;|&nbsp;+33 (0)4 65 84 65 38&nbsp;|&nbsp;Email: contact@lacliniquetechnique.fr
-    </div>
-    <div class="contenthutgiyhrk">
-      &nbsp;Accueil Téléphonique de 8h à 19h&nbsp;|&nbsp;+33 (0)4 65 84 65 38&nbsp;|&nbsp;Email: contact@lacliniquetechnique.fr
-    </div>
-    <div class="contenthutgiyhrk">
-      &nbsp;Accueil Téléphonique de 8h à 19h&nbsp;|&nbsp;+33 (0)4 65 84 65 38&nbsp;|&nbsp;Email: contact@lacliniquetechnique.fr
-    </div>
-    <div class="contenthutgiyhrk">
-      &nbsp;Accueil Téléphonique de 8h à 19h&nbsp;|&nbsp;+33 (0)4 65 84 65 38&nbsp;|&nbsp;Email: contact@lacliniquetechnique.fr
-    </div>
-    <div class="contenthutgiyhrk">
-      &nbsp;Accueil Téléphonique de 8h à 19h&nbsp;|&nbsp;+33 (0)4 65 84 65 38&nbsp;|&nbsp;Email: contact@lacliniquetechnique.fr
-    </div>
-    <div class="contenthutgiyhrk">
-      &nbsp;Accueil Téléphonique de 8h à 19h&nbsp;|&nbsp;+33 (0)4 65 84 65 38&nbsp;|&nbsp;Email: contact@lacliniquetechnique.fr
-    </div>
-  </div> */}
-</div>
+        <div className="container">
+       
 
         <div className="loginnavbar">
             {/* <p className="tregrt gmreghiuthriuengi">La Clinique Technique</p> */}
@@ -170,96 +107,42 @@ function SignupFirstStep() {
                 {/* <div className="iamgeofhfuehhere col-lg-5 d-none d-lg-block">
                   <img src={lct} alt="" />
                 </div> */}
-                <div className='d-flex align-items-center justify-content-center flex-column'>
+                <div className='d-flex justify-content-center flex-column'>
                   {/* <TitleSection /> */}
-                   <p className="uhfieryfueriug nuhruehnjtrh mb-0">La Clinique Technique</p>
-                  <p className='uhfieryfueriug lrlrlr'> Réparer, rénover, sans stress.</p> 
-                  {/* <p className='gmiou45iogeroihjgnoer text-center'><span className='njuhriu'>Nos Experts</span>: Architectes, Ingénieur(e)s Génie Civil, Ingénieur(e)s Géotechnique, Experts en Bâtiment, Architectes d'intérieur, Avocats en Droit Immobilier, Ingénieur(e)s Electricité, AMO, Diagnostiqueurs Immobiliers<br /> <span className='jioguoyrgtr'>Proche de chez vous!</span></p> */}
-                   <CircleComponent/>
+                   <p className="uhfieryfueriug nuhruehnjtrh sss mb-0">Augmentez vos revenus et vore flux client ! <br/><span className='ss'>Rejoignez le réseau d'artisans de la clinique technique</span></p>
+                   <div className="nnn">
+                    <ul className='custom'>
+                        <li className='listi'>
+                        <FontAwesomeIcon icon={faCheck} className="list-icon" />
+                        <span>Contrat sans engagement</span>
+                        </li>
+                        <li className='listi'>
+                        <FontAwesomeIcon icon={faCheck} className="list-icon" />
+                        <span>Complément d'activité</span>
+                        </li>
+                        <li className='listi'>
+                        <FontAwesomeIcon icon={faCheck} className="list-icon" />
+                        <span>Mise en relation gratuite</span>
+                        </li>
+                       
+                    </ul>
+                   </div>
+                 
                
                   
                  
                   <Nav.Link className='ms-0 mt-2'>
                   <div className="button nfreuohregdd ngfgureg mt-0">
-                    {/* <Link to="/start">
-                      <button className="giojiojioj ngriugyoeruogyriu">Commencez maintenant</button>
-                    </Link> */}
+                    <Link to="/inscription">
+                      <button className="giojiojioj ngriugyoeruogyriu">Je commence mon inscription</button>
+                    </Link> 
                   </div>
                 </Nav.Link>
                 </div>
-                  <WhyChooseUs/>
+                  {/* <WhyChooseUs/>
                  <HowItWorks/> 
                  <Testimonials/>
-                {/* <p className='uhfieryfueriug mt-4 grjeioguioeriogjer'>Votre guichet unique</p> */}
-                {/* <div className="cardsofbanner  row mt-4 ">
-                  <Link> 
-                  </Link>
-                <div className="cardonehere col-lg-4 col-md-6">
-
-                  
-                <div className="contentherekigek">
-  <p className='jiogyreiugijkmr'>Votre Espace Connecté</p>
-  <p className='iopfnuee'> - Générer, Gérer, Suivre et Archiver vos Devis, vos missions et Documents Sensibles en temps réel.</p>
-</div>
-</div>
-<div className="cardonehere col-lg-4 col-md-6">
-  <div className="contentherekigek">
-    <p className='jiogyreiugijkmr'>Consultation Technique Rémunérée</p>
-    <p className='iopfnuee'>- Mise en relation avec un Expert spécialisé proche de chez vous.</p>
-  </div>
-</div>
-<div className="cardonehere col-lg-4 col-md-6">
-  <div className="contentherekigek">
-    <p className='jiogyreiugijkmr'>Tarificateur de Missions <br /> en quelques clics</p>
-    <p className='iopfnuee'> - Permis de Construire, étude charpente, étude béton, étude de Sol, division de parcelle, litige, procédure judiciaire, décoration aménagement, diagnostic et expertise structurelle, Maîtrise d'Oeuvre, diagnostic immobilier, AMO</p>
-  </div>
-</div>
-
-<div className="cardonehere col-lg-4 col-md-6">
-  <div className="contentherekigek">
-    <p className='jiogyreiugijkmr'>Tarificateur de devis Travaux <br /> en quelques clics</p>
-    <p className='iopfnuee'> - Construction neuve, réhabilitation, rénovation intérieure, démolition, terrassement, ravalement, étanchéité, isolation</p>
-  </div>
-</div>
-
-<div className="cardonehere col-lg-4 col-md-6">
-  <div className="contentherekigek">
-    <p className='jiogyreiugijkmr'>Le CI <br />Le Curriculum Immobilier</p>
-    <p className='iopfnuee'> - 1er Carnet de santé pour les bâtiments et les ouvrages architecturaux</p>
-  </div>
-</div>
-<div className="cardonehere col-lg-4 col-md-6">
-  <div className="contentherekigek">
-    <p className='jiogyreiugijkmr'>Bibliothèque Technique</p>
-    <p className='iopfnuee'> - Consulter, publier des modèles et exemples d'études techniques, plans et rapports</p>
-  </div>
-</div>
-<div className="cardonehere col-lg-4 col-md-6">
-  <div className="contentherekigek">
-    <p className='jiogyreiugijkmr'>La Bourse des Prix</p>
-    <p className='iopfnuee'> - S'informer et comparer les prix des matériaux, matériels et main d'œuvre du BTP</p>
-  </div>
-</div>
-<div className="cardonehere col-lg-4 col-md-6">
-  <div className="contentherekigek">
-    <p className='jiogyreiugijkmr'>Service de Vérification et d'Optimisation</p>
-    <p className='iopfnuee'> - Obtenez un second avis par l'un de nos experts</p>
-  </div>
-</div>
-<div className="cardonehere col-lg-4 col-md-6">
-  <div className="contentherekigek">
-    <p className='jiogyreiugijkmr'>Notre E-Market</p>
-    <p className='iopfnuee'> - Achetez, vendez et louez</p>
-  </div>
-</div>
-
-                </div> */}
-                  {/* <div className="imageodgueh d-flex justify-content-center">
-                  <img src={img} alt="" className='gikroujgkroepgkr' />
-                </div> */}
-                
-                {/* <p className='jioyuiyihjkop mb-0'>+33 (0)4 65 84 65 38 <p className='jioyuiyihjkop'>Accueil Telephonique de 8h a 19h</p></p> */}
-
+               */}
               </div>
             </div>
           </div>
@@ -334,4 +217,4 @@ function SignupFirstStep() {
   );
 }
 
-export default SignupFirstStep;
+export default Professionel;

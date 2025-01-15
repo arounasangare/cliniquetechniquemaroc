@@ -5,7 +5,9 @@ import PageTransports from './PageTransports';
 import PageTravaux from './PageTravaux';
 import PageServices from './PageServices';
 import CircleComponent from './CircleComponent';
-
+import Professionel from './professionel';
+import InscriptionPro from './InscriptionPro';
+import LoginPro from './LoginPro';
 
 function App() {
   
@@ -14,8 +16,11 @@ function App() {
     <Router>
     <Routes>
       <Route path="/" element={<SignupFirstStep />} />
-      <Route path="/start" element={<CircleComponent/>} />
-      
+      {/* <Route path="/start" element={<CircleComponent/>} /> */}
+      <Route path="/home" element={<SignupFirstStep/>}/>
+      <Route path="/professionnel" element={<Professionel/>}/>
+      <Route path="/inscription" element={<InscriptionPro/>}/>
+      <Route path="/login" element={<LoginPro/>}/>
       <Route path="/transports" element={<PageTransports/>} />
       <Route path="/travaux" element={<PageTravaux/>} />
       <Route path="/services" element={<PageServices/>} />
