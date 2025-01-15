@@ -25,7 +25,7 @@ const CircleComponent2 = () => {
      { id: 5, title: "Ingénieur Structure", imageUrl: dee },
      { id: 5, title: "Ingénieur Génie Electrique", imageUrl: deee },
      { id: 5, title: "Ingénieur Géotechnique ", imageUrl: deeee },
-    // { id: 5, title: "plombier", imageUrl: dixxxxxe },
+     { id: 5, title: "plombier", imageUrl: dixxxxxe },
     // { id: 5, title: "Rénovation", imageUrl: dixxxxe },
    
     // { id: 5, title: "plombier", imageUrl: dixxxxxe },

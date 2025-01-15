@@ -175,14 +175,15 @@ function SignupFirstStep() {
                    <p className="uhfieryfueriug nuhruehnjtrh mb-0">La Clinique Technique</p>
                   <p className='uhfieryfueriug lrlrlr'> Réparer, rénover, sans stress.</p> 
                   {/* <p className='gmiou45iogeroihjgnoer text-center'><span className='njuhriu'>Nos Experts</span>: Architectes, Ingénieur(e)s Génie Civil, Ingénieur(e)s Géotechnique, Experts en Bâtiment, Architectes d'intérieur, Avocats en Droit Immobilier, Ingénieur(e)s Electricité, AMO, Diagnostiqueurs Immobiliers<br /> <span className='jioguoyrgtr'>Proche de chez vous!</span></p> */}
-                  <CircleComponent/>
-                  {/* <CircleComponent2/> */}
+                   <CircleComponent/>
+               
+                  
                  
                   <Nav.Link className='ms-0 mt-2'>
                   <div className="button nfreuohregdd ngfgureg mt-0">
-                    <Link to="/register/client">
+                    {/* <Link to="/start">
                       <button className="giojiojioj ngriugyoeruogyriu">Commencez maintenant</button>
-                    </Link>
+                    </Link> */}
                   </div>
                 </Nav.Link>
                 </div>
