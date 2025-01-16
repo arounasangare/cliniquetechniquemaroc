@@ -7,7 +7,9 @@ import Image from 'react-bootstrap/Image';
 
 import "./pageVoirProfile.css";
 import star from './assets/star.png';
-import macon from './assets/macon.jpg'
+import macon from './assets/macon.jpg';
+import depa from './assets/depa.png'
+
 
 
 

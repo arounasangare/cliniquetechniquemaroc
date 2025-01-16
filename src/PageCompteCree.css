@@ -1,0 +1,13 @@
+.select_exact{
+  width: 100%; /* Ajuste à la largeur souhaitée */
+  padding: 10px;
+  font-size: 16px;
+  color: #212529; /* Texte grisé pour un effet désactivé */
+  background-color: white; /* Fond gris clair */
+  border: 1px solid #ced4da; /* Bordure gris clair */
+  border-radius: 5px; /* Coins légèrement arrondis */
+}
+.text-container{
+  text-align: center;
+  width:100%;
+}
