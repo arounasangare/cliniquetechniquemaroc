@@ -11,6 +11,14 @@ import InscriptionPro from './InscriptionPro';
 import LoginPro from './LoginPro';
 import PageResultatsProf from './PageResultatsProf';
 import PageVoirProfile from './PageVoirProfile';
+import PageLogin from './PageLogin';
+import PageRegister from './PageRegister';
+import PageCompteCree from './PageCompteCree';
+import PageHomeClient from './PageHome';
+
+
+
+
 
 
 
@@ -33,7 +41,10 @@ function App() {
       <Route path="/info-supplementaire" element={<PageFormLieuDate/>} />
       <Route path="/resultats" element={<PageResultatsProf/>} />
       <Route path="/voir-profile" element={<PageVoirProfile/>} />
-
+      <Route path="/login-client" element={<PageLogin/>} />
+      <Route path="/register-client" element={<PageRegister/>} />
+      <Route path="/compte-cree" element={<PageCompteCree/>} />
+      <Route path="/home-client" element={<PageHomeClient/>} />
 
 
     </Routes>
