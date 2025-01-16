@@ -87,14 +87,14 @@ function PageTransports() {
 
                 <Nav.Link href="https://lacliniquetechnique.pro" target="_blank" rel="noopener noreferrer">
                   <div className="button ngfgureg mt-0">
-                    <a >
-                      <button className="giojiojioj vrvrvrvr ">Professionnel Adhérer au Réseau</button>
-                    </a>
+                  <Link to="/professionnel">
+                    <button className="giojiojioj vrvrvrvr">S'inscrire en tant que professionnel</button>
+                  </Link>
                   </div>
                 </Nav.Link>
                 <Nav.Link>
                   <div className="button ngfgureg mt-0">
-                    <Link to="/login">
+                    <Link to="/login/client">
                       <button className="giojiojioj">Connexion</button>
                     </Link>
                   </div>
