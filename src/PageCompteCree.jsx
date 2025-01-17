@@ -49,7 +49,7 @@ function PageCompteCree() {
       <div className='container text-center bg-light border rounded p-4 col-10 col-lg-4 mt-5 mb-5'>
           <h3 style={{color:'black'}} >Votre Compte est crée avec succès</h3>
         <div className="container2 mt-3">
-           <a href="#!"><svg width='25px' viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#393f81"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#393f81" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path><path fill="#393f81" d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path></g></svg><span className='lien'> Retourner á la page de connexion</span></a>
+           <Link to="/login-client"><svg width='25px' viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#393f81"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#393f81" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"></path><path fill="#393f81" d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"></path></g></svg><span className='lien'> Retourner á la page de connexion</span></Link>
         </div>
       </div>
 

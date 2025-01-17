@@ -71,11 +71,11 @@ function PageRegister() {
               <Form.Control type='password' placeholder='*****' />
             </Form.Group>
             <div  className=' d-flex  justify-content-center align-items-center'>
-              <a style={{height: '30px' }}  className='btn-login bg-dark text-white border rounded ps-4 pe-4'>Connexion</a>
+              <Link to='/compte-cree' style={{height: '30px' }}  className='btn-login bg-dark text-white border rounded ps-4 pe-4'>Connexion</Link>
             </div>
         </Form>
         <div className="mt-3">
-          <p>Vous avez déjà un compte ?<a href="#!"><span className='lien'> Connectez-vous.</span></a></p>
+          <p>Vous avez déjà un compte ?<Link to="/login-client"><span className='lien'> Connectez-vous.</span></Link></p>
         </div>
       </div>
       <div className="prefooter pt-3 pb-4" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, width: '100%' }}>

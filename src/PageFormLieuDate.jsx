@@ -96,7 +96,9 @@ function PageFormLieuDate() {
           </Form.Group>
 
             <div  className='d-flex justify-content-center align-items-center'>
-              <a href="/resultats"style={{height: '30px' }}  className='bg-dark text-white border rounded ps-4 pe-4'>Trouver un professionnel</a>
+              <Link to="/resultats" style={{ height: '30px' }} className="bg-dark text-white border rounded ps-4 pe-4">
+                Trouver un professionnel
+              </Link> 
             </div>
         </Form>
       </div>
