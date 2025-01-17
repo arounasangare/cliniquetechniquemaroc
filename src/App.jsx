@@ -15,6 +15,7 @@ import PageLogin from './PageLogin';
 import PageRegister from './PageRegister';
 import PageCompteCree from './PageCompteCree';
 import PageHomeClient from './PageHome';
+import WorkspacePro from './WorkspacePro';
 
 
 
@@ -34,6 +35,7 @@ function App() {
       <Route path="/home" element={<SignupFirstStep/>}/>
       <Route path="/professionnel" element={<Professionel/>}/>
       <Route path="/inscription" element={<InscriptionPro/>}/>
+      <Route path="/Workspace" element={<WorkspacePro/>}/>
       <Route path="/login" element={<LoginPro/>}/>
       <Route path="/transports" element={<PageTransports/>} />
       <Route path="/travaux" element={<PageTravaux/>} />

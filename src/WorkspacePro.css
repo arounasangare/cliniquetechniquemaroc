@@ -1,0 +1,144 @@
+/* Style global de la navbar */
+.navbarrr {
+    background-color: #fff;
+    padding: 15px 0 !important;
+    box-shadow: 0 0 10px #00000017 !important;
+  }
+  
+  .navbarrr .nav-logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Container de la navbar pour s'assurer que le contenu est bien aligné */
+  .navbarrr-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Liens de la navigation */
+  .navvv-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espace entre les éléments */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navvv-links li {
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .navvv-links li:hover {
+    color: #1e90ff;
+  }
+  
+  .navvv-links .active {
+    font-weight: bold;
+    color: #1e90ff;
+  }
+  
+  /* Style du bouton de déconnexion */
+  .navbarrr .giojiojioj {
+    padding: 8px 16px;
+    background-color: #002964;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+ 
+  
+  /* Section de contenu dynamique */
+  .content {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  /* Sections (Profil, Demandes, Historique, etc.) */
+  .profile-section,
+  .requests-section,
+  .history-section,
+  .calendar-section,
+  .notifications-section {
+    margin-bottom: 20px;
+  }
+  
+  h2, h3 {
+    color: #333;
+  }
+  
+  /* Utilisation de Flexbox pour aligner les éléments */
+  .profile-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-details img {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Styles pour les éléments de liste */
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    padding: 10px;
+  
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+ 
+  /* Responsive design : règles pour les petits écrans */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+    }
+  
+    .navvv-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .navvv-links li {
+      text-align: center;
+    }
+  
+    .content {
+      padding: 10px;
+    }
+  
+    .profile-details {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .profile-details img {
+      margin-bottom: 10px;
+    }
+  
+    .giojiojioj {
+      margin-top: 10px;
+    }
+  }
+  

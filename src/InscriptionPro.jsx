@@ -54,7 +54,7 @@ function InscriptionPro() {
       <Navbar expand="lg" className="navbar ">
         <Container>
           <Navbar.Brand href="#home" className="navlogo">
-            <p className="navlogo">La Clinique Technique</p>
+            <p className="navlogo">LaCliniqueTechnique</p>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
           <Navbar.Offcanvas
