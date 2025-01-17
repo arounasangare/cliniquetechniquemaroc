@@ -30,6 +30,14 @@
 .nav_bar_container{
   padding: 20px 50px;
 }
+.cont{
+  display: flex;  
+  padding-left: 40px;
+}
+.dropdown{
+  position:absolute;
+  right: 0;
+}
 
 
 
@@ -49,7 +57,6 @@
   margin: 0 10px;
   padding: 3px 10px;
   border-radius: 10px;
-  color:white;
 }
 
 .nav_bar button {
@@ -60,6 +67,7 @@
   border-radius: 5px;
   font-weight: bold;
   color: #000000;
+  background-color: rgb(236, 236, 255) ;
   text-decoration: none;
   font-weight: bold;
 }
@@ -74,11 +82,40 @@
 
 .home-class ,.history-class {
   padding: 20px;
- /* Hidden by default */
 }
 
 .home-class.active ,.history-class.active {
-  display: block; /* Show active section */
+  display: block; /
+}
+.champs{
+  font-weight: bold;
+}
+.accepte{
+  color:rgb(79, 190, 39);
+  font-weight : bold
+}
+.refuse{
+  color:rgb(176, 29, 29);
+  font-weight : bold
+}
+.encours{
+  color:rgb(46, 31, 186);
+  font-weight : bold
+}
+.btn1{
+
+}
+.menu1{
+  position: absolute;
+  right: 0;
+  left:0;
+  margin-right:100px;
+}
+
+.dropdown{
+  position: relative;
+  right:0;
+  top:0;
 }
 
 
@@ -95,9 +132,7 @@
   }
   .sous-title{
     color: var(--grayscale900);
-    font-size: 15px;
-  
-
+    font-size: 15px; 
   }
   
 }

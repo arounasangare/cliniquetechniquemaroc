@@ -60,11 +60,11 @@ function PageLogin() {
               <Form.Control type='password' placeholder='*****' />
             </Form.Group>
             <div  className=' d-flex  justify-content-center align-items-center'>
-              <a style={{height: '30px' }}  className='btn-login bg-dark text-white border rounded ps-4 pe-4'>Connexion</a>
+              <Link to='/home-client' style={{height: '30px' }}  className='btn-login bg-dark text-white border rounded ps-4 pe-4'>Connexion</Link>
             </div>
         </Form>
         <div className="mt-3">
-          <p>Vous n'avez pas de compte ?<a href="#!"><span className='lien'> Inscrivez-vous.</span></a></p>
+          <p>Vous n'avez pas de compte ?<Link to="/register-client"><span className='lien'> Inscrivez-vous.</span></Link></p>
         </div>
       </div>
 
