@@ -48,9 +48,7 @@ function PageFormLieuDate() {
                 </Nav.Link>
                 <Nav.Link>
                   <div className="button ngfgureg mt-0">
-                    {/*<Link to="/login">
-                      <button className="giojiojioj">Connexion</button>
-                    </Link>*/}
+
                   </div>
                 </Nav.Link>
               </Nav>
@@ -65,7 +63,7 @@ function PageFormLieuDate() {
       <div className='container bg-light border rounded p-4 col-11 col-lg-6 mt-1 mb-5'>
         <div className='aaaaa justify-content-center  align-items-center d-flex '>
             <img className='image' src={macon} thumbnail/>
-          <div className=' cont ms-3  '>
+          <div className=' const ms-lg-3  '>
             <h2 className='nom'>Ilias Maroun </h2>
             <h2 className='profess'>Profession : Macon</h2>
             <a href="#" class="btn btn-primary mt-2 text-light">Demander Professional</a>
