@@ -47,7 +47,7 @@ function SignupFirstStep() {
       <Navbar expand="lg" className="navbar ">
         <Container>
           <Navbar.Brand href="#home" className="navlogo">
-            <p className="navlogo">lacliniquetechnique</p>
+            <p className="navlogo">oumay</p>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
           <Navbar.Offcanvas
@@ -109,7 +109,7 @@ function SignupFirstStep() {
               <div className="realcompte pb-5 pt-5 justify-content-center align-items-center">
 
                 <div className='d-flex align-items-center justify-content-center flex-column'>
-                <p className="uhfieryfueriug mt-0 mb-0">La Clinique Technique</p>
+                <p className="uhfieryfueriug mt-0 mb-0">oumay</p>
 
                 <h1 className='titleanimation' aria-label="Hi! I'm a developer">
                       Besoin d'un &nbsp;<span class="typewriter"></span> ?
